@@ -3,93 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UnlimStudio – We Build Brands</title>
+  <title>UnlimStudio – We Build Cool Stuff</title>
   <style>
+    :root {
+      --bg-color: #111;
+      --card-bg: #1c1c1c;
+      --text-main: #eee;
+      --text-muted: #aaa;
+      --accent: #3b82f6;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #1a1a1a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
     }
+
     header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      max-width: 600px;
     }
+
     header h1 {
-      font-size: 2.6em;
-      margin-bottom: 10px;
-      color: #2c3e50;
+      font-size: 3.5em;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      background: -webkit-linear-gradient(45deg, #fff, #999);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
     header p {
-      font-size: 1.1em;
-      color: #555;
-      max-width: 640px;
-      margin: 0 auto;
+      font-size: 1.3em;
+      color: var(--text-muted);
+      margin-top: 15px;
+      font-weight: 300;
+      line-height: 1.4;
     }
+
     section {
-      background: #fff;
-      border-radius: 12px;
-      padding: 30px;
-      max-width: 700px;
+      background: var(--card-bg);
+      border: 1px solid #333;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 600px;
       width: 100%;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      margin-top: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
+
     section h2 {
-      font-size: 1.5em;
-      margin-bottom: 15px;
-      color: #000;
-    }
-    section p {
-      line-height: 1.6;
-      color: #333;
-    }
-    .contact {
-      margin-top: 20px;
-      font-size: 1em;
-      color: #007acc;
-    }
-    footer {
-      margin-top: 40px;
       font-size: 0.9em;
-      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-weight: 600;
     }
+
+    section p {
+      line-height: 1.7;
+      color: #ccc;
+      margin-bottom: 25px;
+      font-size: 1.05em;
+    }
+
+    .contact {
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      font-size: 0.95em;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .contact p {
+      margin: 0 0 4px 0;
+      color: var(--text-muted);
+    }
+
+    .contact strong {
+      color: #fff;
+    }
+
+    .contact a {
+      color: var(--text-main);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--text-muted);
+      transition: color 0.2s;
+    }
+
+    .contact a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
     address {
       font-style: normal;
-      color: #555;
-      margin-top: 10px;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.85em;
+      color: #444;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Unlim Studio</h1>
-    <p>We build brands from the ground up — simple, real products that solve everyday problems and make people’s lives a little better.</p>
+    <h1>We build cool stuff.</h1>
+    <p>A creative home for one-of-a-kind brands.</p>
   </header>
 
   <section>
-    <h2>Our Work</h2>
-    <p>Unlim Studio is a product-driven team. We develop and operate our own e-commerce brands, mainly on Amazon. Every brand we launch is something we’ve put thought into — we don’t chase trends, we build things we believe in.</p>
- 
+    <h2>Our Studio</h2>
+    <p>
+      Unlim Studio consists of a portfolio of multiple in-house brands that we build, design, and grow. We tackle multiple niches with simplicity and impact.
+    </p>
 
     <div class="contact">
-      📧 <strong>Contact:</strong> contact@unlimstudio.com<br />
-      🏢 <strong>Address:</strong>
-      <address>
-        30 N Gould St Ste N<br />
-        Sheridan, WY 82801<br />
-        USA
-      </address>
+      <div>
+        <p>
+          We currently only incubate our own ideas, but feel free to drop us an email:
+        </p>
+        <a href="mailto:contact@unlimstudio.com" style="display: inline-block;">contact@unlimstudio.com</a>
+      </div>
+      
+      <div>
+        <address>
+          30 N Gould St Ste N, Sheridan, WY 82801, USA
+        </address>
+      </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Unlim Studio LLC. All rights reserved.
+    &copy; 2025 Unlim Studio LLC.
   </footer>
 
 </body>
