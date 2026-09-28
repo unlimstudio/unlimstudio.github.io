@@ -155,8 +155,12 @@
   </section>
 
   <footer>
-    &copy; 2025 Unlim Studio LLC.
+    &copy; <span id="year"></span> Unlim Studio LLC.
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
